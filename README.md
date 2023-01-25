@@ -34,6 +34,6 @@ RTL to GDSII Flow refers to the all the steps involved in converting a logical R
 It is an open-source VLSI flow created using open source tools. Basically it is collection of various scripts which invoke and execute these tools in right sequence, modifies inputs and outputs and gives an organised results.
 
 ## List of all open source tool used
-|Name of Tool||Application / Usage|
+|Name of Tool|Application / Usage|
 |:---:|:---:|
 
