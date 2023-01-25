@@ -38,3 +38,13 @@ It is an open-source VLSI flow created using open source tools. Basically it is 
 |:---:|:---:|
 |Yosys|Synthesis of RTL Design|
 |ABC|Mapping of Netlist|
+|OpenSTA|Static Timing Analysis|
+|OpenROAD|Floorplanning, Placement, CTS, Optimization, Routing|
+|TritonRoute|Detailed Routing|
+|Magic VLSI|Layout Tool|
+|NGSPICE|SPICE Extraction and Simulation|
+SPEF_EXTRACTOR|Generation of SPEF file from DEF file|
+
+# setting up enviroment
+The above list of tools shows that, many different tools are required for various tasks in Physical VLSI Design. Each tool in itself have number of system requirements and require various supporting tools to be installed. Installing each tool one-by-one seems in-efficient. This is made easy by some custom scripts that setup the required tools and environment for them in just a few easy steps. To install all the required tools, one can refer to the below mentioned repositories:
+# Day 1
