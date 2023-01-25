@@ -49,3 +49,20 @@ SPEF_EXTRACTOR|Generation of SPEF file from DEF file|
 The above list of tools shows that, many different tools are required for various tasks in Physical VLSI Design. Each tool in itself have number of system requirements and require various supporting tools to be installed. Installing each tool one-by-one seems in-efficient. This is made easy by some custom scripts that setup the required tools and environment for them in just a few easy steps. To install all the required tools, one can refer to the below mentioned repositories:
 - [VSD Flow](https://github.com/kunalg123/vsdflow) - Installs Yosys, Magic, OpenTimer, OpenSTA and some other supporting tools
 - [OpenLANE Build Script](https://github.com/nickson-jose/openlane_build_script) Install all required OpenROAD and some supporting tools
+
+# Day 1
+## Inception of open-source EDA, OpenLANE and Sky130 PDK
+
+### Basic IC Design Terminologies
+During the Physical Designing, one will come across multiple terminologies that are frequently used. Some of them are mentioned below:
+
+- Package: 
+It is a case that surrounds the circuit material to protect it from physical damage or corrosion and allow mounting of the electrical contacts connecting it to the printed circuit board (PCB). The below snippet shows an IC with 48 pins and Quad Flat No-Leads(QFN) package.
+- Die:
+A die is a small block of semiconducting material on which a given functional circuit is fabricated.
+- Core:
+It is the actual area of the IC where the logic resides.
+- Pads:
+These are the interfaces between the internal signals of a chip and the external pins
+
+
