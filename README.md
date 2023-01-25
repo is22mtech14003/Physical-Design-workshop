@@ -117,3 +117,6 @@ The OpenLANE flow requires various open source tools as well as their supporting
 ![Screenshot 2023-01-26 020837](https://user-images.githubusercontent.com/120499567/214685048-4114d72c-5900-4dcb-b6bb-2e4accd612fa.png)
 OpenLANE flow consists of several stages. By default all flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively as shown here.
 
+1. Synthesis
+a. yosys - Performs RTL synthesis
+b. abc - Performs technology mapping
