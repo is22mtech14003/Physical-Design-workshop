@@ -36,3 +36,5 @@ It is an open-source VLSI flow created using open source tools. Basically it is 
 ## List of all open source tool used
 |Name of Tool|Application / Usage|
 |:---:|:---:|
+|Yosys|Synthesis of RTL Design|
+|ABC|Mapping of Netlist|
