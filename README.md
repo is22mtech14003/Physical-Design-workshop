@@ -3,7 +3,7 @@
 # Table of Contents
 * [Day 1](#day-1)
     + [RTL to GDSII Flow](#RTL-to-GDSII-Flow)
-    + [SoC design and openLANE](#soc-design-and-openlane)
+    + [skywater 130 PDK](#soc-design-and-openlane)
     + [ASIC Design Flow](#ASIC-Design-Flow)
     + [Getting familiar to EDA tools](#getting-familiar-to-eda-tools)
 
