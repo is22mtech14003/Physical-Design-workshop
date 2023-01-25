@@ -17,3 +17,13 @@
 
 
 ## RTL to GDSII Flow
+RTL to GDSII Flow refers to the all the steps involved in converting a logical Register Transfer Level(RTL) Design to a fabrication ready GDSII format. GDSII is a database file format which is an industry standard for data exchange of IC layout artwork. The RTL to GSDII flow consists of following steps:
+- RTL Synthesis
+- Static Timing Analysis(STA)
+- Design for Testability(DFT)
+- FloorplanningRouting
+- Placement
+- Clock Tree Synthesis(CTS)
+- Routing
+- GDSII Streaming
+### All the steps are further discussed in details in the repository.
