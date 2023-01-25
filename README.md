@@ -29,4 +29,8 @@ RTL to GDSII Flow refers to the all the steps involved in converting a logical R
 ### All the steps are further discussed in details in the repository.
 
 ## skywater 130 PDK
-### It is a Open source PDK (Process Design Kit) which is released by the collabration of Google and SkyWater Technologies foundary. Currently this technology has a target node of 130 nm. It is open to everyone and can be accessed at SkyWater Open Source PDK. This PDK is extremely flexible as it provides many optional featurs as standard features. Hence it povide designers with wide range of design choice.
+#### It is a Open source PDK (Process Design Kit) which is released by the collabration of Google and SkyWater Technologies foundary. Currently this technology has a target node of 130 nm. It is open to everyone and can be accessed at SkyWater Open Source PDK. This PDK is extremely flexible as it provides many optional featurs as standard features. Hence it povide designers with wide range of design choice.
+## openLANE
+It is an open-source VLSI flow created using open source tools. Basically it is collection of various scripts which invoke and execute these tools in right sequence, modifies inputs and outputs and gives an organised results.
+
+## 
