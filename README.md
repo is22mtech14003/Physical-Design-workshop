@@ -110,3 +110,10 @@ Google along with SKYWater made the laters PDK opensource (130 nm node). The PDK
 
 ### Environment Setup
 The OpenLANE flow requires various open source tools as well as their supporting tools to be installed for the complete Physical design flow. Installing this tools one by one is tedious as well as one can get lost in the steps. Installation can be done easily using some set of scripts present in following repositories VSDFlow (for installing Yosys, OpenSTA, Magic, OpenTimer, netgent, etc) and OpenLANE Build Scripts.
+
+## What is OpenLANE
+[]OpenLANE](https://github.com/efabless/openlane)is an automated RTL to GDSII flow which includes various open-source components such as OpenROAD, Yosys, Magic, Fault, Netgen, SPEF-Extractor. It also facilitates to add custom design exploration and optimization scripts. The detailed diagram of the OpenLANE architecture is shown below:
+
+![Screenshot 2023-01-26 020837](https://user-images.githubusercontent.com/120499567/214685048-4114d72c-5900-4dcb-b6bb-2e4accd612fa.png)
+OpenLANE flow consists of several stages. By default all flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively as shown here.
+
