@@ -159,3 +159,31 @@ A custom shell script or commands can be generated to make the task simpler.
 - OpenLANE supports two modes of operation: interactive and autonomous.
 - To use interactive mode use -interactive flag with ./flow.tcl
 ![comand line](https://user-images.githubusercontent.com/120499567/214778912-9e6e6db0-2dc9-43b9-8c6e-4750353beedc.png)
+
+![comand line2](https://user-images.githubusercontent.com/120499567/214796942-4dec9fc6-716d-4bf9-a22f-b31511929017.png)
+![openlane](https://user-images.githubusercontent.com/120499567/214797582-7c8d2d86-73c8-43db-a997-e6d8e52b2b78.png)
+
+### Design Preparation
+The first step after invoking OpenLANE is to import the openlane package of required version. This is done using following command. Here 0.9 is the required version of OpenLANE.
+package require openlane 0.9
+
+The next step is to prepare our design for the OpenLANE flow. This is done using following command:
+
+prep -design <design-name>
+    Some additional flags that can be used while preparation are
+    
+    -tag <name-for-current-run> - All the files generated during the flow will be stored in a directory named <name-for-current-run>
+-overwrite - If a directory name mentioned in -tag already exists, it will be overwritten.
+    
+    During the design preparation the technology LEF and cell LEF files are merged together to obtain a merged.lef file. The LEF file contains information like the layer information, set of design rules, information about each standard cell which is required for place and route.
+    
+    ### clock
+     ![clock verilog file](https://user-images.githubusercontent.com/120499567/214799858-872faf0a-ae30-4e82-b302-bf91b50e5e83.png)
+
+    ![clock](https://user-images.githubusercontent.com/120499567/214800028-43f9832e-246c-46e6-b07c-5bee64f4cd32.png)
+    
+![less opensta_main timing rpt](https://user-images.githubusercontent.com/120499567/214800475-fe968a0d-e558-485d-a239-e7785d280a27.png)
+    
+    ![less yosys_4 stat rpt](https://user-images.githubusercontent.com/120499567/214800629-58672672-f4de-493e-88c4-8ca797897072.png)
+    
+    ![metal layer](https://user-images.githubusercontent.com/120499567/214800761-6300c486-7a75-4e6e-b34e-215e316c39fe.png)
