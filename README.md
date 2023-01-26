@@ -188,7 +188,7 @@ prep -design <design-name>
     
 ![metal layer](https://user-images.githubusercontent.com/120499567/214800761-6300c486-7a75-4e6e-b34e-215e316c39fe.png)
     
-    ## Design Synthesis and Results
+## Design Synthesis and Results
     The first step in OpenLANE flow is RTL Synthesis of the design loaded. This is done using the following command.
     run_synthesis
     
