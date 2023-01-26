@@ -199,6 +199,9 @@ prep -design <design-name>
  ## flop ratio calculation
     
  ![IMG20230126150238](https://user-images.githubusercontent.com/120499567/214803138-96810024-3747-42a3-9c20-4f11de769c59.jpg)
+    
+    
+ # Day 2
 
     
     
