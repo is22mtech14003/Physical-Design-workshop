@@ -195,6 +195,11 @@ prep -design <design-name>
 ![Screenshot 2023-01-26 123533](https://user-images.githubusercontent.com/120499567/214801711-12b5dc49-d439-40ca-8f00-7b049d91c782.png)
 
 ![Screenshot 2023-01-26 123639](https://user-images.githubusercontent.com/120499567/214801842-73da5e44-c8ca-4caa-9f9d-96b69da21aeb.png)
+   
+ ## flop ratio calculation
+    
+ ![IMG20230126150238](https://user-images.githubusercontent.com/120499567/214803138-96810024-3747-42a3-9c20-4f11de769c59.jpg)
+
     
     
     
