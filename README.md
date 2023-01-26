@@ -222,9 +222,26 @@ Chip Floorplanning is the arrangement of logical block, library cells, pins on s
 |![Screenshot 2023-01-26 181140](https://user-images.githubusercontent.com/120499567/214901394-78af434b-3206-4937-8679-ae3dda7aedbd.png)
 |![Screenshot 2023-01-26 184517](https://user-images.githubusercontent.com/120499567/214901979-d887b9ba-3fc8-40b7-8ef3-576defb2304a.png)
 |
-|:---:|:---:|    
+|:---:|:---:|
+### Utilization Factor and Aspect Ratio
+Utilization Factor is ratio of the area of core used by standard cells to the total core area. The utilization factor is generally kept in the range of 0.5-0.7 i.e. 50% - 60%. Maintaining a proper utilization factor facilitates placement and routing optimization.
     
+### Power Planning
     
+    Power planning is a step in which power grid network is created to distribute power to each part of the design equally. This step deals with the unwanted voltage drop and ground bounce. Steady state IR Drop is caused by the resistance of the metal wires comprising the power distribution network. By reducing the voltage difference between local power and ground, steady-state IR Drop reduces both the speed and noise immunity of the local cells and macros.
+    
+### Pin Placement
+    
+Pin placement is a important part of floorplanning as the timing delays and number of buffers required is dependent on the position of the pin. There are multiple pin placement option available such as equidistant placement, high-density placemen
+    
+### Decoupling Capacitors to the pre placed cells
+- The power lines can have some RLC component causing the voltage to drop at the node where it enters the Blocks or the ground of the cell can be at a higher potential than ideally 0V
+    
+- When this happens, there is a chance such that the logic transitions are not to the upper or lower noise margins but to the forbidden state causing the circuit to misbehave
+    
+- This is prevented by adding a capacitor in parallel with the power and ground node of the block such that the capacitor decouples the block from the power source whenever there is a logic transition
+    
+### Floorplan using OpenLANE    
     
 
     
