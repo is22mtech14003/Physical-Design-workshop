@@ -187,3 +187,17 @@ prep -design <design-name>
 ![less yosys_4 stat rpt](https://user-images.githubusercontent.com/120499567/214800629-58672672-f4de-493e-88c4-8ca797897072.png)
     
 ![metal layer](https://user-images.githubusercontent.com/120499567/214800761-6300c486-7a75-4e6e-b34e-215e316c39fe.png)
+    
+    ## Design Synthesis and Results
+    The first step in OpenLANE flow is RTL Synthesis of the design loaded. This is done using the following command.
+    run_synthesis
+    
+![Screenshot 2023-01-26 123533](https://user-images.githubusercontent.com/120499567/214801711-12b5dc49-d439-40ca-8f00-7b049d91c782.png)
+
+![Screenshot 2023-01-26 123639](https://user-images.githubusercontent.com/120499567/214801842-73da5e44-c8ca-4caa-9f9d-96b69da21aeb.png)
+    
+    
+    
+    
+
+
