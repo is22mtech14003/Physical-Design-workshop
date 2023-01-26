@@ -119,5 +119,34 @@ OpenLANE flow consists of several stages. By default all flow steps are run in s
 
 1. Synthesis
 
-a. yosys - Performs RTL synthesis
-b. abc - Performs technology mapping
+- yosys - Performs RTL synthesis
+- abc - Performs technology mapping
+- OpenSTA - Pefroms static timing analysis on the resulting netlist to generate timing reports
+
+2. Floorplan and PDN
+
+- init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
+- ioplacer - Places the macro input and output ports
+- pdn - Generates the power distribution network
+- tapcell - Inserts welltap and decap cells in the floorplan
+
+3. Placement
+
+- RePLace - Performs global placement
+- Resizer - Performs optional optimizations on the design
+- OpenPhySyn - Performs timing optimizations on the design
+- OpenDP - Perfroms detailed placement to legalize the globally placed components
+
+4. CTS
+- TritonCTS - Synthesizes the clock distribution network (the clock tree)
+5. Routing
+- FastRoute - Performs global routing to generate a guide file for the detailed routeg
+- TritonRoute - Performs detailed routing
+- SPEF-Extractor - Performs SPEF extraction
+
+6. GDSII Generation
+- Magic - Streams out the final GDSII layout file from the routed def
+
+7. Checks
+- Magic - Performs DRC Checks & Antenna Checks
+- Netgen - Performs LVS Checks
