@@ -150,3 +150,12 @@ OpenLANE flow consists of several stages. By default all flow steps are run in s
 7. Checks
 - Magic - Performs DRC Checks & Antenna Checks
 - Netgen - Performs LVS Checks
+# Open-Source EDA Tools
+### OpenLANE Initialization
+For invoking OpenLANE in Linux Ubuntu, we should first run the docker everytime we use OpenLANE. This is done by using the following script:
+![Screenshot 2023-01-26 124804](https://user-images.githubusercontent.com/120499567/214778306-ddf22299-1322-43f8-87d2-4628aea74724.png)
+A custom shell script or commands can be generated to make the task simpler.
+- To invoke OpenLANE run the ./flow.tcl script.
+- OpenLANE supports two modes of operation: interactive and autonomous.
+- To use interactive mode use -interactive flag with ./flow.tcl
+![comand line](https://user-images.githubusercontent.com/120499567/214778912-9e6e6db0-2dc9-43b9-8c6e-4750353beedc.png)
