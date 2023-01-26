@@ -201,7 +201,12 @@ prep -design <design-name>
  ![IMG20230126150238](https://user-images.githubusercontent.com/120499567/214803138-96810024-3747-42a3-9c20-4f11de769c59.jpg)
     
     
- # Day 2
+ # Day 2 Good floorplan vs bad floorplan and introduction to library cells
+    
+ ### Chip Floorplanning
+Chip Floorplanning is the arrangement of logical block, library cells, pins on silicon chip. It makes sure that every module has been assigned an appropriate area and aspect ratio, every pin of the module has connection with other modules or periphery of the chip and modules are arranged in a way such that it consumes lesser area on a chip
+    
+    
 
     
     
