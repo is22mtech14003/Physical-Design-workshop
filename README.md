@@ -211,14 +211,18 @@ Chip Floorplanning is the arrangement of logical block, library cells, pins on s
     
  ### core
     A core is the section of the chip where the fundamental logic of the desine is placed.
- ### Die which consist of more is small semiconducotor matrial specimen on which the fundamental circuit is fabricated 
+ ### Die 
+    which consist of more is small semiconducotor matrial specimen on which the fundamental circuit is fabricated 
 ![Screenshot 2023-01-26 155841](https://user-images.githubusercontent.com/120499567/214899864-ce3e3171-acb0-45b7-b137-806094cb5751.png)
     
 ![Screenshot 2023-01-26 160649](https://user-images.githubusercontent.com/120499567/214900208-ad9813d0-7b7b-4639-8943-d2a8f424d95d.png)
 
 ![Screenshot 2023-01-26 180600](https://user-images.githubusercontent.com/120499567/214900658-06b3f66a-f8d2-40ac-8984-5949c73e40a9.png)
     
-    
+|![Screenshot 2023-01-26 181140](https://user-images.githubusercontent.com/120499567/214901394-78af434b-3206-4937-8679-ae3dda7aedbd.png)
+|![Screenshot 2023-01-26 184517](https://user-images.githubusercontent.com/120499567/214901979-d887b9ba-3fc8-40b7-8ef3-576defb2304a.png)
+|
+|:---:|:---:|    
     
     
     
