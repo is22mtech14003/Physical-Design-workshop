@@ -184,6 +184,6 @@ prep -design <design-name>
     
 ![less opensta_main timing rpt](https://user-images.githubusercontent.com/120499567/214800475-fe968a0d-e558-485d-a239-e7785d280a27.png)
     
-    ![less yosys_4 stat rpt](https://user-images.githubusercontent.com/120499567/214800629-58672672-f4de-493e-88c4-8ca797897072.png)
+![less yosys_4 stat rpt](https://user-images.githubusercontent.com/120499567/214800629-58672672-f4de-493e-88c4-8ca797897072.png)
     
-    ![metal layer](https://user-images.githubusercontent.com/120499567/214800761-6300c486-7a75-4e6e-b34e-215e316c39fe.png)
+![metal layer](https://user-images.githubusercontent.com/120499567/214800761-6300c486-7a75-4e6e-b34e-215e316c39fe.png)
