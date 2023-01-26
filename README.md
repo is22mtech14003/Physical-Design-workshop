@@ -241,6 +241,9 @@ Pin placement is a important part of floorplanning as the timing delays and numb
     
 - This is prevented by adding a capacitor in parallel with the power and ground node of the block such that the capacitor decouples the block from the power source whenever there is a logic transition
     
+![Screenshot 2023-01-26 202139](https://user-images.githubusercontent.com/120499567/214905535-ad5fb7bc-e16c-4f50-a0ab-a3e9b9f59cad.png)
+    
+    
 ### Floorplan using OpenLANE    
     
 
