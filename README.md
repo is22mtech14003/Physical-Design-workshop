@@ -177,10 +177,10 @@ prep -design <design-name>
     
     During the design preparation the technology LEF and cell LEF files are merged together to obtain a merged.lef file. The LEF file contains information like the layer information, set of design rules, information about each standard cell which is required for place and route.
     
-    ### clock
-     ![clock verilog file](https://user-images.githubusercontent.com/120499567/214799858-872faf0a-ae30-4e82-b302-bf91b50e5e83.png)
+### clock
+![clock verilog file](https://user-images.githubusercontent.com/120499567/214799858-872faf0a-ae30-4e82-b302-bf91b50e5e83.png)
 
-    ![clock](https://user-images.githubusercontent.com/120499567/214800028-43f9832e-246c-46e6-b07c-5bee64f4cd32.png)
+![clock](https://user-images.githubusercontent.com/120499567/214800028-43f9832e-246c-46e6-b07c-5bee64f4cd32.png)
     
 ![less opensta_main timing rpt](https://user-images.githubusercontent.com/120499567/214800475-fe968a0d-e558-485d-a239-e7785d280a27.png)
     
@@ -266,7 +266,7 @@ Magic Layout Tool is used for visualizing the layout after floorplan. In order t
  ## Placement
     
 ### Placement and Optimization
-    The next step after floorplanning is placement. Placement determines location of each of the components on the die. Placement does not just place the standard cells available in the synthesized netlist. It also optimizes the design, thereby removing any timing violations created due to the relative placement on die.
+The next step after floorplanning is placement. Placement determines location of each of the components on the die. Placement does not just place the standard cells available in the synthesized netlist. It also optimizes the design, thereby removing any timing violations created due to the relative placement on die.
     
 ### Placement using OpenLANE
     
@@ -289,7 +289,7 @@ Placement in OpenLANE is done using the following command.
 ### Cell Design Flow
 In a border view Cell Design flow is are the stages or steps involved in the entire design of a standard cell. The figure below shows the input, output and design steps involved in cell design
     
- ![Screenshot 2023-01-29 185923](https://user-images.githubusercontent.com/120499567/215329469-e53d1c41-5071-4f8b-aefc-b5931bf109c1.png)   
+![Screenshot 2023-01-29 185923](https://user-images.githubusercontent.com/120499567/215329469-e53d1c41-5071-4f8b-aefc-b5931bf109c1.png)   
     
 ##  Characterization Flow
     
