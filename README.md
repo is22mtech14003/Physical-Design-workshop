@@ -279,7 +279,7 @@ Pin placement is a important part of floorplanning as the timing delays and numb
     - Detailed Placement
     
  ## Placement is carried out as an iterative process till the value of overflow converges to 0.
-    ![Screenshot 2023-01-27 211738](https://user-images.githubusercontent.com/120499567/215329020-a74c5135-33bc-4df3-92e8-9485c11cf141.png)
+ ![Screenshot 2023-01-27 211738](https://user-images.githubusercontent.com/120499567/215329020-a74c5135-33bc-4df3-92e8-9485c11cf141.png)
 
  ![Screenshot 2023-01-27 212034](https://user-images.githubusercontent.com/120499567/215329079-6862b031-a844-4b96-9f40-d4632c73b0a7.png)
    
