@@ -269,14 +269,14 @@ Pin placement is a important part of floorplanning as the timing delays and numb
     
 ### Placement using OpenLANE
     
-    Placement in OpenLANE is done using the following command.
+Placement in OpenLANE is done using the following command.
     
-    - run_placement
+- run_placement
     
 ## The DEF file created during floorplan is used as an input to placement. Placement in OpenLANE occurs in two stages:
     
-    - Global Placement
-    - Detailed Placement
+- Global Placement
+- Detailed Placement
     
  ## Placement is carried out as an iterative process till the value of overflow converges to 0.
  ![Screenshot 2023-01-27 211738](https://user-images.githubusercontent.com/120499567/215329020-a74c5135-33bc-4df3-92e8-9485c11cf141.png)
