@@ -207,7 +207,7 @@ prep -design <design-name>
 Chip Floorplanning is the arrangement of logical block, library cells, pins on silicon chip. It makes sure that every module has been assigned an appropriate area and aspect ratio, every pin of the module has connection with other modules or periphery of the chip and modules are arranged in a way such that it consumes lesser area on a chip
     
 ### Netlist
-    Netlist basically defined the conectivity between all the components
+Netlist basically defined the conectivity between all the components
     
  ### core
     A core is the section of the chip where the fundamental logic of the desine is placed.
