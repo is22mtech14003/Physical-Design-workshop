@@ -250,7 +250,7 @@ Pin placement is a important part of floorplanning as the timing delays and numb
 ##  
     run_floorplane
     
-    Successful floorplanning gives a /def/ file as output. This file contains the die area and placement of standard cells
+    Successful floorplanning gives a /*def*/ file as output. This file contains the die area and placement of standard cells
     
 
     
