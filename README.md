@@ -395,6 +395,13 @@ The above command gives an Timing Analysis Report which contains:
     
 ![Screenshot 2023-01-29 004723](https://user-images.githubusercontent.com/120499567/215331746-104f02f6-6939-47f5-981a-c034f7cbbae4.png)
 ![Screenshot 2023-01-29 032355](https://user-images.githubusercontent.com/120499567/215331789-6b2de745-6797-4a11-a505-26e615724b66.png)
+    
+![Screenshot 2023-01-29 225342](https://user-images.githubusercontent.com/120499567/215345922-5ff05c86-fd22-4897-8b4d-e72a910fe9e5.png)
+## Floorplanre
+    
+![Screenshot 2023-01-29 231559](https://user-images.githubusercontent.com/120499567/215345995-a85f3373-1e85-4d27-935f-584c1034c484.png)
+![Screenshot 2023-01-29 232144](https://user-images.githubusercontent.com/120499567/215346075-82d6f814-179d-4650-8136-796d6e577c62.png)
+    
 
     
 ## Clock Tree Synthesis using TritonCTS
@@ -409,8 +416,8 @@ In OpenLANE, clock tree synthesis is carried out using TritonCTS tool. CTS shoul
  
  The command used for running CTS in OpenLANE is given below.
     
-'''ruby
-run_cts
-'''    
+- run_cts  
+    
+    
 
 
