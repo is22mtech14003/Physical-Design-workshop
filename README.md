@@ -415,6 +415,7 @@ Detailed placement
  ```
  magic -T /home/kunalg123/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
+![Screenshot 2023-01-30 014139](https://user-images.githubusercontent.com/120499567/215353627-873e355c-b53f-44d8-a4ba-e05c3e867b27.png)
 
     
  ### decupling capacitor
