@@ -395,7 +395,11 @@ The above command gives an Timing Analysis Report which contains:
     
 ![Screenshot 2023-01-29 004723](https://user-images.githubusercontent.com/120499567/215331746-104f02f6-6939-47f5-981a-c034f7cbbae4.png)
 ![Screenshot 2023-01-29 032355](https://user-images.githubusercontent.com/120499567/215331789-6b2de745-6797-4a11-a505-26e615724b66.png)
+
     
+## Clock Tree Synthesis using TritonCTS
+    
+Clock Tree Synthesis(CTS) is a process which | makes | sure that the clock gets distributed evenly to all sequential elements in a design. The goal of CTS is to minimize the clock latency and skew. There are several CTS techniques like:    
     
 
 
