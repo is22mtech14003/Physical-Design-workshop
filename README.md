@@ -250,7 +250,39 @@ Pin placement is a important part of floorplanning as the timing delays and numb
 ##  
     run_floorplane
     
-    Successful floorplanning gives a def file as output. This file contains the |die| area and placement of standard cells
+    Successful floorplanning gives a def file as output. This file contains the die area and placement of standard cells
+    ![Screenshot 2023-01-27 011011](https://user-images.githubusercontent.com/120499567/215328132-ddcc13a5-6664-4255-aa07-c74eb7b42003.png)
+    
+##  Review Floorplan Layout in Magic
+    
+    Magic Layout Tool is used for visualizing the layout after floorplan. In order to view floorplan in Magic, following three files are required: 1. Technology File (sky130A.tech) 2. Merged LEF file (merged.lef) 3. DEF File
+    
+    
+    ![Screenshot 2023-01-27 015424](https://user-images.githubusercontent.com/120499567/215328468-ce3de7a1-274c-4193-8d11-2d29dfc9109d.png)
+
+    ![Screenshot 2023-01-27 015734](https://user-images.githubusercontent.com/120499567/215328507-3b6f4a51-8c3e-46d6-9e72-43299c6953fd.png)
+
+ ## Placement
+    
+### Placement and Optimization
+    The next step after floorplanning is placement. Placement determines location of each of the components on the die. Placement does not just place the standard cells available in the synthesized netlist. It also optimizes the design, thereby removing any timing violations created due to the relative placement on die.
+    
+### Placement using OpenLANE
+    
+    Placement in OpenLANE is done using the following command.
+    
+    - run_placement
+    
+## The DEF file created during floorplan is used as an input to placement. Placement in OpenLANE occurs in two stages:
+    
+    - Global Placement
+    - Detailed Placement
+    
+ ## Placement is carried out as an iterative process till the value of overflow converges to 0.
+    ![Screenshot 2023-01-27 211738](https://user-images.githubusercontent.com/120499567/215329020-a74c5135-33bc-4df3-92e8-9485c11cf141.png)
+
+ ![Screenshot 2023-01-27 212034](https://user-images.githubusercontent.com/120499567/215329079-6862b031-a844-4b96-9f40-d4632c73b0a7.png)
+   
     
     
 
