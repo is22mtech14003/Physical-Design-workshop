@@ -442,7 +442,7 @@ Clock Tree Synthesis(CTS) is a process which |makes| sure that the clock gets di
 2. X - Tree
 3. Fish bone
     
-In OpenLANE, **clock tree synthesis** is carried out using TritonCTS tool. CTS should always be done after the floorplanning and placement as the CTS is carried out on a placement.def file that is created during placement stage.  
+In OpenLANE, **clock tree synthesis** is *carried* out using TritonCTS tool. CTS should always be done after the floorplanning and placement as the CTS is carried out on a placement.def file that is created during placement stage.  
  
  The command used for running CTS in OpenLANE is given below.
     
