@@ -397,12 +397,41 @@ The above command gives an Timing Analysis Report which contains:
 ![Screenshot 2023-01-29 032355](https://user-images.githubusercontent.com/120499567/215331789-6b2de745-6797-4a11-a505-26e615724b66.png)
     
 ![Screenshot 2023-01-29 225342](https://user-images.githubusercontent.com/120499567/215345922-5ff05c86-fd22-4897-8b4d-e72a910fe9e5.png)
-## Floorplanre
+## Floorplane
     
 ![Screenshot 2023-01-29 231559](https://user-images.githubusercontent.com/120499567/215345995-a85f3373-1e85-4d27-935f-584c1034c484.png)
 ![Screenshot 2023-01-29 232144](https://user-images.githubusercontent.com/120499567/215346075-82d6f814-179d-4650-8136-796d6e577c62.png)
     
+### placement
+global placement
+![Screenshot 2023-01-29 232144](https://user-images.githubusercontent.com/120499567/215346423-a09d37e7-3624-46a1-ab66-f9b046143515.png)
+    
+Detailed placement
+    
+   
+![Screenshot 2023-01-29 233727](https://user-images.githubusercontent.com/120499567/215346501-46276e0a-f321-4858-8719-7368cc9780e3.png)
 
+    
+ ### decupling capacitor
+    
+- tap_decap_or
+    
+![Screenshot 2023-01-29 234051](https://user-images.githubusercontent.com/120499567/215346716-91b400df-5f0a-45b9-9058-420e32e65076.png)
+    
+### detaieled placement
+- detailed_placement
+![Screenshot 2023-01-29 234051](https://user-images.githubusercontent.com/120499567/215350611-177a40e2-97ab-46b9-8766-b5a4159eb1bb.png)
+    
+    
+    
+Generate power distribution network
+    
+- gen_pdn
+    
+ ![Screenshot 2023-01-30 005351](https://user-images.githubusercontent.com/120499567/215350805-69c08bfc-988b-4ce8-8f94-0b8f228eba41.png)
+   
+    
+    
     
 ## Clock Tree Synthesis using TritonCTS
     
@@ -416,8 +445,10 @@ In OpenLANE, clock tree synthesis is carried out using TritonCTS tool. CTS shoul
  
  The command used for running CTS in OpenLANE is given below.
     
-- run_cts  
+- run_cts
     
     
-
+    
+### After run routing
+    
 
