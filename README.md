@@ -411,6 +411,10 @@ Detailed placement
     
    
 ![Screenshot 2023-01-29 233727](https://user-images.githubusercontent.com/120499567/215346501-46276e0a-f321-4858-8719-7368cc9780e3.png)
+    
+ ```
+ magic -T /home/kunalg123/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+```
 
     
  ### decupling capacitor
@@ -425,7 +429,7 @@ Detailed placement
     
     
     
-Generate power distribution network
+### Generate power distribution network
     
 - gen_pdn
     
