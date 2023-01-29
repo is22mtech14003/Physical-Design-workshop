@@ -244,7 +244,11 @@ Pin placement is a important part of floorplanning as the timing delays and numb
 ![Screenshot 2023-01-26 202139](https://user-images.githubusercontent.com/120499567/214905535-ad5fb7bc-e16c-4f50-a0ab-a3e9b9f59cad.png)
     
     
-### Floorplan using OpenLANE    
+### Floorplan using OpenLANE
+    Floorplanning in OpenLANE is done using the following command.
+        
+##  
+    run_floorplane
     
 
     
