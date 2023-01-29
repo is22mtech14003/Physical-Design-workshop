@@ -308,11 +308,93 @@ A solution to above problems is Cell Characterization. It is a simple model for 
 6. Verification - Different checks are performed to ensure the correctness of the characterization
     
     
-##  Day 3 - Design library cell using Magic Layout and ngspice characterization
+#  Day 3 - Design library cell using Magic Layout and ngspice characterization
     
 Every Design is represented by equivalent cell design. All the standard cell designs are available in the Cell Library. A fully custom cell design that meets all rules can be added to the library. To begin with, a CMOS Inverter is designed in Magic Layout Tool and analysis is carried out using NGSPICE tool.    
+
+## CMOS Inverter Design using Magic
+    
+The inverter design is done using Magic Layout Tool. It takes the technology file as an input (sky130A.tech in this case). Magic tool provide a very easy to use interface to design various layers of the layout. It also has an in-built DRC check fetaure. The snippet below shows a layout for CMOS Inverter with and without design rule violations.
+    
+![Screenshot 2023-01-28 130819](https://user-images.githubusercontent.com/120499567/215330221-465d5121-8a27-4c77-82f8-15e25736b483.png)
+
+![Screenshot 2023-01-28 175141](https://user-images.githubusercontent.com/120499567/215330254-251235ee-cc05-4ede-be94-af3a2fd69e9b.png)
+
+    
+## Extract SPICE Netlist from Standard Cell Layout
+    
+ To simulate and verify the functionality of the standard cell layout designed, there is a need of SPICE netlist of a given layout. To mention in brief, "Simulation Program with Integrated Circuit Emphasis (SPICE)" is an industry standard design language for electronic circuitry. SPICE model very closely models the actual circuit behavior. Extraction of SPICE model for a given layout is done in two stages.
+    
+1.  Extract the circuit from the layout design.
+-  extract all
+    
+2.  Convert the extracted circuit to SPICE model.
+- ext2spice cthresh 0 rthresh 0
+ext2spice
+
+The extracted SPICE model like the first snippet shown below. Some modification are done to the SPICE netlist for the purpose of simulations, which is shown in the second snippet below.
+    
+![Screenshot 2023-01-28 182906](https://user-images.githubusercontent.com/120499567/215330518-452f9a0e-4ed7-4d5f-9ed4-b2215b092ab0.png)
+
+![Screenshot 2023-01-28 184603](https://user-images.githubusercontent.com/120499567/215330633-8583053f-c131-47a4-b438-d6189b25a0de.png)
+    
+## Transient Analysis using NGSPICE
+    
+The SPICE netlist generated in previous step is simulated using the NGSPICE tool. NGSPICE is an open-source mixed-level/mixed-signal electronic spice circuit simulator. The command used to invoke NGSPICE is shown below.
+    
+- ngspice <name-of-SPICE-netlist-file>
+    
+Following command is used to plot waveform in ngspice tool.
+    
+- ngspice 1 -> plot Y vs time A
+![Screenshot 2023-01-28 212826](https://user-images.githubusercontent.com/120499567/215330755-60cb45e8-2360-4046-b886-d51e54c5aa5e.png)
+
+Below figure shows the waveform of Inverter output vs input w.r.t. time. Many timing parameters like rise time delay, fall time delay, propagation delay are calculated using this waveform.
+
+![Screenshot 2023-01-28 224427](https://user-images.githubusercontent.com/120499567/215330811-927c4076-a868-4eae-8936-c3197adccd96.png)
+
+
+        
+# Day 4 - Pre-layout timing analysis and importance of good clock tree    
+    
+In order to use a design of standard cell layout in OpenLANE RTL2GDS flow, it is converted to a standard cell LEF. LEF stands for Library Exchange Format. The entire design has to be analyzed for any timing violations after addition or change in the design  
+    
+## Magic Layout to Standard Cell LEF
+    
+Before creating the LEF file we require some details about the layers in the designs. This details are available in a tracks.info as shown below. It gives information about the offset and pitch of a track in a given layer both in horizontal and vertical direction. The track information is given in below mentioned format.
+    
+- <layer-name> <X-or-Y> <track-offset> <track-pitch>
+![Screenshot 2023-01-28 235208](https://user-images.githubusercontent.com/120499567/215331047-67c765e3-89c9-449d-9eb1-7a50b70c2319.png)
+    
+To create a standard cell LEF from an existing layout, some important aspects need to be taken into consideration. 
+    
+1. The height of cell be appropriate, so that the VPWR and VGND properly fall on the power distribution network
+2. The width of cell should be an odd multiple of the minimum permissible grid size.
+3. The input and ouptut of the cell fall on intersection of the vertical and horizontal grid line.
     
     
+![Screenshot 2023-01-29 001931](https://user-images.githubusercontent.com/120499567/215331167-47906834-07b4-4ce6-8dbd-4b4a8eee87d1.png)
+    
+## Timing Analysis using OpenSTA
+    
+ The Static Timing Analysis(STA) of the design is carried out using the OpenSTA tool. The analysis can be done in to different ways.
+    
+- Inside OpenLANE flow: This is by invoking openroad command inside the OpenLANE flow. In the openroad OpenSTA is invoked. 
+- Outside OpenLANE flow: This is done by directly invoking OpenSTA in the command line. This requires extra configuration to be done to specific the verilog file, constraints, clcok period and other required parameters.
+    
+OpenSTA is invoked using the below mentioned command.    
+    
+- sta <conf-file-if-required>    
+    
+The above command gives an Timing Analysis Report which contains:
+    
+1. Hold Time Slack
+2. Setup Time Slack
+3. Total Negative Slack (= 0.00, if no negative slack)
+4. Worst Negative Slack (= 0.00, if no negative slack)
+    
+![Screenshot 2023-01-29 004723](https://user-images.githubusercontent.com/120499567/215331746-104f02f6-6939-47f5-981a-c034f7cbbae4.png)
+![Screenshot 2023-01-29 032355](https://user-images.githubusercontent.com/120499567/215331789-6b2de745-6797-4a11-a505-26e615724b66.png)
     
     
 
