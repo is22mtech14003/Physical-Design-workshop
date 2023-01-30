@@ -416,6 +416,9 @@ Detailed placement
  magic -T /home/kunalg123/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
 ![Screenshot 2023-01-30 014139](https://user-images.githubusercontent.com/120499567/215353627-873e355c-b53f-44d8-a4ba-e05c3e867b27.png)
+![image](https://user-images.githubusercontent.com/120499567/215354149-2ab50b76-db68-46b8-ab45-391baf39ca22.png)
+![Screenshot 2023-01-30 020856](https://user-images.githubusercontent.com/120499567/215354600-c850fe3c-5bbb-4623-82db-afc0308223fb.png)
+
 
     
  ### decupling capacitor
@@ -452,6 +455,19 @@ In OpenLANE, **clock tree synthesis** is *carried* out using TritonCTS tool. CTS
  The command used for running CTS in OpenLANE is given below.
     
 - run_cts
+    
+![Screenshot 2023-01-30 043138](https://user-images.githubusercontent.com/120499567/215360639-0f623b97-8666-4616-8187-994ef1a15d5d.png)
+    
+    
+### Openroad
+
+- This will open the open road. Our objective to do the analysis of the entire circut where clock tree has been build now. Now we will open OpenSTA here. For timing alnalysis.
+    
+![Screenshot 2023-01-30 093439](https://user-images.githubusercontent.com/120499567/215385296-5a7f95c5-9ffe-41f9-88dc-0110265582e0.png)
+
+Setup Slack constrains are met
+    
+![Screenshot 2023-01-30 093304](https://user-images.githubusercontent.com/120499567/215385694-df563b30-a7a6-468f-9568-344220b5f40b.png    
     
     
     
