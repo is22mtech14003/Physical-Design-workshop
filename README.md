@@ -466,7 +466,6 @@ In OpenLANE, **clock tree synthesis** is *carried* out using TritonCTS tool. CTS
 ![Screenshot 2023-01-30 093439](https://user-images.githubusercontent.com/120499567/215385296-5a7f95c5-9ffe-41f9-88dc-0110265582e0.png)
 
 Setup Slack constrains are met
-    
 ![Screenshot 2023-01-30 093304](https://user-images.githubusercontent.com/120499567/215385694-df563b30-a7a6-468f-9568-344220b5f40b.png    
     
     
