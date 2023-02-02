@@ -474,19 +474,22 @@ Setup Slack constrains are met
 # Day 5
 ## What is routing
 [Routing is the process of creating physical connections based on logical conectivity](http://vlsibegin.blogspot.com/p/routing.html)    
-    
-## Final Steps for RTL2GDS using TritonRoute and OpenSTA
+   
     
 ### Maze Routing:
 One simple routing algorithm is Maze Routing or Lee's routing:
+    
+The Maze Routing algorithm is an algorithm to find connections between the terminals and the Lee algorithm is one possible solution for Maze routing problems. Lee algorithm searches for the shortest path between two terminals and guarantees to find a route between two points if the connection exists.    
     
 - The shortest path is one that follows a steady increment of one (1-to-9 on the example below). There might be multiple path like this but the best path that the tool will choose is one with less bends. The route should not be diagonal and must not overlap an obstruction such as macros.   
     
 - This algorithm however has high run time and consume a lot of memory thus more optimized routing algorithm is preferred (but the principles stays the same where route with shortest path and less bends is preferred)
     
+It takes more time because first create the maze and then do leveling and then make the connection from source to target
+    
 ![Screenshot 2023-01-30 214501](https://user-images.githubusercontent.com/120499567/215531941-57393182-b53e-4538-805d-55c4b0e1ea9c.png)
 
-## DRC Cleaning:
+## DRC
     
 DRC cleaning is the next step after routing. DRC cleaning is done to ensure the routes can be fabricated and printed in silicon faithfully. Most DRC is due to the constraints of the photolitographic machine for chip fabrication where the wavelength of light used is limited. There are thousands of DRC and some DRC are:
     
