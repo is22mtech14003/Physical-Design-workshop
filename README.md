@@ -554,8 +554,8 @@ We will now finally do the routing, simply run run_routing. This will do both gl
 
 ![Screenshot 2023-01-30 215739](https://user-images.githubusercontent.com/120499567/215535709-e6a77fa2-48dc-4407-9e7c-5a4b851710e9.png)
     
-    
-    
+# [GDSII](https://en.wikipedia.org/wiki/GDSII#:~:text=It%20was%20originally%20developed%20by,IC%20foundries%20for%20IC%20fabrication.)    
+GDSII is a file format similar to JPEG, DOCX, XLSX etc to enable a layout design to be transferred from one place to another(IP owner handoff to PD guys, PD guys to foundry for fabrication), to be viewed/used for verifications like Physical verification checks by EDA tools.    
 ## Extraction of GRSII file
     
 - Finally do run_magic in the openlane to generate gds file.
