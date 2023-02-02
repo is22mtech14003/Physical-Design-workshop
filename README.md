@@ -504,7 +504,7 @@ DRC cleaning is the next step after routing. DRC cleaning is done to ensure the 
 3. Minimum wire spacing (edge to edge spacing)
 4. Signal short = this can be solved my moving the route to next layer using vias. This results in more DRC (Via width, Via Spacing, etc.). Higher metal layer must be wider than lower metal layer and this is another DRC.
     
-## Power Distribution Network (review):
+## [Power Distribution Network](https://vlsi-backend-adventure.com/powerplan.html#:~:text=Power%20Plan,also%20includes%20Power%20Via%20insertion):
     
 This is just a review on PDN. The power and ground rails has a pitch of 2.72um thus the reason why the customized inverter cell has a height of 2.72 or else the power and ground rails will not be able to power up the cell. Looking at the LEF file runs/[date]/tmp/merged.nom.lef, you will notice that all cells are of height 2.72um and only width differs.
     
