@@ -474,7 +474,12 @@ Setup Slack constrains are met
 # Day 5
 ## What is routing
 [Routing is the process of creating physical connections based on logical conectivity](http://vlsibegin.blogspot.com/p/routing.html)    
-   
+or best possible conection between source to target
+it should be very less zig zag path and it should be L or Z saphe
+    
+- Global route is done by fast route and detailed route is done by triton route. 
+- Fast route is folowed by detailed route
+- intera layer routing means within the router
     
 ### Maze Routing:
 One simple routing algorithm is Maze Routing or Lee's routing:
@@ -489,7 +494,7 @@ It takes more time because first create the maze and then do leveling and then m
     
 ![Screenshot 2023-01-30 214501](https://user-images.githubusercontent.com/120499567/215531941-57393182-b53e-4538-805d-55c4b0e1ea9c.png)
 
-## DRC
+## [DRC](https://www.synopsys.com/glossary/what-is-design-rule-checking.html#:~:text=Design%20Rule%20Checking%20(DRC)%20verifies,result%20in%20a%20chip%20failure.)
     
 DRC cleaning is the next step after routing. DRC cleaning is done to ensure the routes can be fabricated and printed in silicon faithfully. Most DRC is due to the constraints of the photolitographic machine for chip fabrication where the wavelength of light used is limited. There are thousands of DRC and some DRC are:
     
