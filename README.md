@@ -472,6 +472,8 @@ Setup Slack constrains are met
 
     
 # Day 5
+## What is routing
+[Routing is the process of creating physical connections based on logical conectivity](http://vlsibegin.blogspot.com/p/routing.html)    
     
 ## Final Steps for RTL2GDS using TritonRoute and OpenSTA
     
