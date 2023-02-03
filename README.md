@@ -546,6 +546,21 @@ echo $::env(CURRENT_DEF)
     
 We will now finally do the routing, simply run run_routing. This will do both global and detailed routing, this will take multiple optimization iterations until the DRC violation is reduced to zero. The zeroth iteration has 27426 violations and only at the 8th iteration was all violations solved. The whole routing took 1 hour and 10 mins in my Linux machine with 2 cores. A fun fact: the die area is just 584um by 595um but the total wirelength used for routing spans to 0.5m!!!
     
+ '''
+ - The command to load the previous files (basically whatever you have done).
+1. cd work/tools/openlane_working_dir/openlane
+2. docker
+3.  ./flow.tcl -interactive
+4. package require openlane 0.9
+5. prep -design picorv32a -tag 29-01_18-06
+// if we include new configuration i.e., edit the config file then we have to do overwrite
+prep -design picorv32a -tag 29-01_18-06 -overwrite 
+
+// to check the last def file created i.e., last def
+echo $::env(CURRENT_DEF)
+Now we have to do power distribution network (it has to be done in the floorplan itself but as we missed it we will run it now. The creation of power and ground lines along with side line (std_cell rails)is done iby the pdn.
+gen_pdn
+    
 ![routin1](https://user-images.githubusercontent.com/120499567/215535269-84fec0cb-151b-4fde-9359-b5a6b3efe575.png)
 
 ![routing](https://user-images.githubusercontent.com/120499567/215535431-78153588-805c-4def-94e0-207d3e84955d.png)
@@ -565,7 +580,7 @@ GDSII is a file format similar to JPEG, DOCX, XLSX etc to enable a layout design
 ![Screenshot 2023-01-30 214008](https://user-images.githubusercontent.com/120499567/215537188-5e15ab69-542b-42d2-b58f-11f5b5efc1b9.png)
 
 ### All commands to run in openlane
-    
+'''
 docker
 ./flow.tcl -interactive
 package require openlane 0.9
@@ -587,6 +602,8 @@ run_cts
 gen_pdn
 run_routing
 run_magi
+    
+'''
     
 ## References
     
